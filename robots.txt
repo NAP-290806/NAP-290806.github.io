@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nap-290806.github.io/sitemap.xml
