@@ -30,24 +30,25 @@
   <p class="loader-note">Pouring the glass</p>
 </div>
 
-<header class="nav glass" id="nav">
+<header class="nav glass liquid" id="nav">
   <a class="nav-brand" href="#top" aria-label="Back to top">NAP</a>
-  <nav aria-label="Sections">
-    <span class="nav-lens" aria-hidden="true"></span>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#experience">Experience</a>
-    <a href="#credentials">Credentials</a>
-    <a href="#contact">Contact</a>
+  <nav class="liquid-track" aria-label="Sections">
+    <a href="#about" draggable="false">About</a>
+    <a href="#research" draggable="false">Research</a>
+    <a href="#experience" draggable="false">Experience</a>
+    <a href="#credentials" draggable="false">Credentials</a>
+    <a href="#contact" draggable="false">Contact</a>
   </nav>
+  <button class="nav-sound" type="button" id="sound" aria-pressed="true" aria-label="Sound effects"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.500v5h3.500L12 18.500v-13L7.500 9.500Z"/><path class="snd-on" d="M15.500 9a4.200 4.200 0 0 1 0 6M18 6.500a7.800 7.800 0 0 1 0 11"/><path class="snd-off" d="m15.500 9.500 5 5m0-5-5 5"/></svg></button>
   <a class="nav-cv" href="Naufal_Abiyyu_Permana_CV.pdf" download aria-label="Download CV (PDF)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></svg><span>CV</span></a>
+  <span class="lens" aria-hidden="true"></span>
 </header>
 
 <main>
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <h1 class="hero-name" id="hero-name"><span class="line">Naufal Abiyyu</span><span class="line">Permana</span></h1>
+      <h1 class="hero-name" id="hero-name"><span class="line">Naufal Abiyyu</span> <span class="line">Permana</span></h1>
       <p class="hero-lede">Actuarial science student at Universitas Negeri Surabaya. I model risk with statistics: extreme values, copulas, and time series.</p>
       <div class="hero-cta">
         <a class="btn btn-solid" href="#research" data-spring>See my research</a>
@@ -102,9 +103,11 @@
     <div class="sec-head">
       <h2 class="h2" data-reveal>Research and analysis</h2>
       
-<div class="tabs glass" role="tablist" aria-label="Research and competitions">
-  <span class="tab-lens" aria-hidden="true"></span>
-  <button class="tab" type="button" role="tab" id="tab-research" aria-controls="panel-research" aria-selected="true" tabindex="0">Research (5)</button><button class="tab" type="button" role="tab" id="tab-competitions" aria-controls="panel-competitions" aria-selected="false" tabindex="-1">Competitions (2)</button>
+<div class="tabs glass liquid">
+  <div class="liquid-track" role="tablist" aria-label="Research and competitions">
+    <button class="tab" type="button" role="tab" id="tab-research" aria-controls="panel-research" aria-selected="true" tabindex="0">Research (5)</button><button class="tab" type="button" role="tab" id="tab-competitions" aria-controls="panel-competitions" aria-selected="false" tabindex="-1">Competitions (2)</button>
+  </div>
+  <span class="lens" aria-hidden="true"></span>
 </div>
     </div>
     <div class="cards" role="tabpanel" id="panel-research" aria-labelledby="tab-research">
@@ -251,9 +254,11 @@
     <div class="sec-head">
       <h2 class="h2" data-reveal>Credentials</h2>
       
-<div class="tabs glass" role="tablist" aria-label="Credentials">
-  <span class="tab-lens" aria-hidden="true"></span>
-  <button class="tab" type="button" role="tab" id="tab-certs" aria-controls="panel-certs" aria-selected="true" tabindex="0">Certifications</button><button class="tab" type="button" role="tab" id="tab-finance" aria-controls="panel-finance" aria-selected="false" tabindex="-1">Finance sector training</button><button class="tab" type="button" role="tab" id="tab-awards" aria-controls="panel-awards" aria-selected="false" tabindex="-1">Roles and awards</button>
+<div class="tabs glass liquid">
+  <div class="liquid-track" role="tablist" aria-label="Credentials">
+    <button class="tab" type="button" role="tab" id="tab-certs" aria-controls="panel-certs" aria-selected="true" tabindex="0">Certifications</button><button class="tab" type="button" role="tab" id="tab-finance" aria-controls="panel-finance" aria-selected="false" tabindex="-1">Finance sector training</button><button class="tab" type="button" role="tab" id="tab-awards" aria-controls="panel-awards" aria-selected="false" tabindex="-1">Roles and awards</button>
+  </div>
+  <span class="lens" aria-hidden="true"></span>
 </div>
     </div>
     
@@ -288,8 +293,8 @@
   <span class="cert-title">National Seminar on Bank Resolution and the LPS Policy Guarantee Program</span>
   <span class="cert-meta">IDEI with LPS, September 2026</span>
 </button>
-<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-eis.webp" data-w="552" data-h="666" data-title="Economic Insight Series" data-meta="Komunita Regional Surabaya with Bank Indonesia, August 2026">
-  <span class="cert-img"><img src="cert-eis.webp" width="552" height="666" loading="lazy" decoding="async" alt="Certificate: Economic Insight Series"></span>
+<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-eis.webp" data-w="862" data-h="613" data-title="Economic Insight Series" data-meta="Komunita Regional Surabaya with Bank Indonesia, August 2026">
+  <span class="cert-img"><img src="cert-eis.webp" width="862" height="613" loading="lazy" decoding="async" alt="Certificate: Economic Insight Series"></span>
   <span class="cert-title">Economic Insight Series</span>
   <span class="cert-meta">Komunita Regional Surabaya with Bank Indonesia, August 2026</span>
 </button></div>
@@ -302,8 +307,8 @@
   <span class="cert-title">Financial Mathematics Tutor, SMART 2026</span>
   <span class="cert-meta">HMP Sains Aktuaria UNESA, April to May 2026</span>
 </button>
-<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-digivathon.webp" data-w="552" data-h="666" data-title="DIGIVATHON 2026" data-meta="Certificate of participation, DIGNITY, Universitas Pendidikan Indonesia, August 2026">
-  <span class="cert-img"><img src="cert-digivathon.webp" width="552" height="666" loading="lazy" decoding="async" alt="Certificate: DIGIVATHON 2026"></span>
+<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-digivathon.webp" data-w="862" data-h="612" data-title="DIGIVATHON 2026" data-meta="Certificate of participation, DIGNITY, Universitas Pendidikan Indonesia, August 2026">
+  <span class="cert-img"><img src="cert-digivathon.webp" width="862" height="612" loading="lazy" decoding="async" alt="Certificate: DIGIVATHON 2026"></span>
   <span class="cert-title">DIGIVATHON 2026</span>
   <span class="cert-meta">Certificate of participation, DIGNITY, Universitas Pendidikan Indonesia, August 2026</span>
 </button></div>
