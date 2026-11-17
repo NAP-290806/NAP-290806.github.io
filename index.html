@@ -17,17 +17,28 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="geist.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
+<script>document.documentElement.classList.add('gated');setTimeout(function(){if(window.__napBooted)return;var l=document.getElementById('loader');if(l)l.parentNode.removeChild(l);var r=document.documentElement;r.classList.remove('gated');r.classList.add('no-webgl');},15000);</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Naufal Abiyyu Permana","url":"https://nap-290806.github.io/","jobTitle":"Actuarial Science undergraduate","affiliation":{"@type":"CollegeOrUniversity","name":"Universitas Negeri Surabaya"},"address":{"@type":"PostalAddress","addressLocality":"Surabaya","addressRegion":"East Java","addressCountry":"ID"},"sameAs":["https://www.linkedin.com/in/naufal-abiyyu-permana/","https://orcid.org/0009-0002-7628-0830"],"knowsAbout":["Actuarial science","Extreme value theory","Copula models","Time series analysis","Risk analysis"]}</script>
 </head>
 <body>
 <a class="skip" href="#about">Skip to content</a>
 <canvas id="scene" aria-hidden="true"></canvas>
 
-<div id="loader" role="status" aria-live="polite">
-  <p class="loader-num"><span id="loader-count">0</span><span class="loader-pct">%</span></p>
-  <div class="loader-bar"><i id="loader-fill"></i></div>
-  <p class="loader-note">Pouring the glass</p>
+<div id="loader" role="dialog" aria-modal="true" aria-labelledby="gate-title" aria-describedby="gate-sub">
+  <div class="gate" id="gate">
+    <p class="gate-name" id="gate-title">Naufal Abiyyu Permana</p>
+    <p class="gate-sub" id="gate-sub">Actuarial science portfolio</p>
+    <div class="gate-actions">
+      <button class="btn btn-solid gate-go" type="button" id="enter-sound"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.500v5h3.500L12 18.500v-13L7.500 9.500Z"/><path d="M15.500 9a4.200 4.200 0 0 1 0 6M18 6.500a7.800 7.800 0 0 1 0 11"/></svg><span>Enter with sound</span></button>
+      <button class="gate-quiet" type="button" id="enter-quiet">Enter without sound</button>
+    </div>
+  </div>
+  <div class="count" id="count" hidden>
+    <p class="loader-num" aria-hidden="true"><span id="loader-count">0</span><span class="loader-pct">%</span></p>
+    <div class="loader-bar" aria-hidden="true"><i id="loader-fill"></i></div>
+    <p class="loader-note" role="status">Pouring the glass</p>
+  </div>
 </div>
 
 <header class="nav glass liquid" id="nav">
@@ -62,7 +73,7 @@
       <span class="strap" aria-hidden="true"></span>
       <span class="clip" aria-hidden="true"></span>
       <article class="idcard glass" aria-label="Student ID card">
-        <img class="id-photo" src="profile.webp?v=3" width="640" height="640" alt="Portrait of Naufal Abiyyu Permana in front of the GKN Surabaya building" decoding="async">
+        <img class="id-photo" src="profile.webp?v=4" width="640" height="640" alt="Portrait of Naufal Abiyyu Permana in front of the GKN Surabaya building" decoding="async">
         <div class="id-body">
           <p class="id-name">Naufal Abiyyu Permana</p>
           <p class="id-role">Actuarial Science, Universitas Negeri Surabaya</p>
@@ -256,7 +267,7 @@
       
 <div class="tabs glass liquid">
   <div class="liquid-track" role="tablist" aria-label="Credentials">
-    <button class="tab" type="button" role="tab" id="tab-certs" aria-controls="panel-certs" aria-selected="true" tabindex="0">Certifications</button><button class="tab" type="button" role="tab" id="tab-finance" aria-controls="panel-finance" aria-selected="false" tabindex="-1">Finance sector training</button><button class="tab" type="button" role="tab" id="tab-awards" aria-controls="panel-awards" aria-selected="false" tabindex="-1">Roles and awards</button>
+    <button class="tab" type="button" role="tab" id="tab-certs" aria-controls="panel-certs" aria-selected="true" tabindex="0">Certifications</button><button class="tab" type="button" role="tab" id="tab-finance" aria-controls="panel-finance" aria-selected="false" tabindex="-1"><span class="t-long">Finance sector training</span><span class="t-short">Finance</span></button><button class="tab" type="button" role="tab" id="tab-awards" aria-controls="panel-awards" aria-selected="false" tabindex="-1"><span class="t-long">Roles and awards</span><span class="t-short">Roles &amp; awards</span></button>
   </div>
   <span class="lens" aria-hidden="true"></span>
 </div>
@@ -264,13 +275,13 @@
     
     <div class="cred" role="tabpanel" id="panel-certs" aria-labelledby="tab-certs">
       <div class="cert-grid">
-<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-iblu.webp?v=3" data-w="634" data-h="449" data-title="Certified Data Analyst Using Microsoft Excel" data-meta="IBLU Academy, October 2026. Certificate ID HOVc-jqx4">
-  <span class="cert-img"><img src="cert-iblu.webp?v=3" width="634" height="449" loading="lazy" decoding="async" alt="Certificate: Certified Data Analyst Using Microsoft Excel"></span>
+<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-iblu.webp?v=4" data-w="634" data-h="449" data-title="Certified Data Analyst Using Microsoft Excel" data-meta="IBLU Academy, October 2026. Certificate ID HOVc-jqx4">
+  <span class="cert-img"><img src="cert-iblu.webp?v=4" width="634" height="449" loading="lazy" decoding="async" alt="Certificate: Certified Data Analyst Using Microsoft Excel"></span>
   <span class="cert-title">Certified Data Analyst Using Microsoft Excel</span>
   <span class="cert-meta">IBLU Academy, October 2026. Certificate ID HOVc-jqx4</span>
 </button>
-<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-aws.webp?v=3" data-w="634" data-h="490" data-title="AWS Cloud Practitioner Essentials" data-meta="AWS Training &amp; Certification, course completion, July 2026">
-  <span class="cert-img"><img src="cert-aws.webp?v=3" width="634" height="490" loading="lazy" decoding="async" alt="Certificate: AWS Cloud Practitioner Essentials"></span>
+<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-aws.webp?v=4" data-w="634" data-h="490" data-title="AWS Cloud Practitioner Essentials" data-meta="AWS Training &amp; Certification, course completion, July 2026">
+  <span class="cert-img"><img src="cert-aws.webp?v=4" width="634" height="490" loading="lazy" decoding="async" alt="Certificate: AWS Cloud Practitioner Essentials"></span>
   <span class="cert-title">AWS Cloud Practitioner Essentials</span>
   <span class="cert-meta">AWS Training &amp; Certification, course completion, July 2026</span>
 </button></div>
@@ -278,23 +289,23 @@
     </div>
     <div class="cred" role="tabpanel" id="panel-finance" aria-labelledby="tab-finance" hidden>
       <div class="cert-grid">
-<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-ojk.webp?v=3" data-w="472" data-h="666" data-title="Risk &amp; Governance Summit 2026" data-meta="Financial Services Authority (OJK), Jakarta, July 2026">
-  <span class="cert-img"><img src="cert-ojk.webp?v=3" width="472" height="666" loading="lazy" decoding="async" alt="Certificate: Risk &amp; Governance Summit 2026"></span>
+<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-ojk.webp?v=4" data-w="472" data-h="666" data-title="Risk &amp; Governance Summit 2026" data-meta="Financial Services Authority (OJK), Jakarta, July 2026">
+  <span class="cert-img"><img src="cert-ojk.webp?v=4" width="472" height="666" loading="lazy" decoding="async" alt="Certificate: Risk &amp; Governance Summit 2026"></span>
   <span class="cert-title">Risk &amp; Governance Summit 2026</span>
   <span class="cert-meta">Financial Services Authority (OJK), Jakarta, July 2026</span>
 </button>
-<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-lps.webp?v=3" data-w="634" data-h="450" data-title="LPS Call for Research 2026" data-meta="Banking research writing seminar, Indonesia Deposit Insurance Corporation (LPS), July 2026">
-  <span class="cert-img"><img src="cert-lps.webp?v=3" width="634" height="450" loading="lazy" decoding="async" alt="Certificate: LPS Call for Research 2026"></span>
+<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-lps.webp?v=4" data-w="634" data-h="450" data-title="LPS Call for Research 2026" data-meta="Banking research writing seminar, Indonesia Deposit Insurance Corporation (LPS), July 2026">
+  <span class="cert-img"><img src="cert-lps.webp?v=4" width="634" height="450" loading="lazy" decoding="async" alt="Certificate: LPS Call for Research 2026"></span>
   <span class="cert-title">LPS Call for Research 2026</span>
   <span class="cert-meta">Banking research writing seminar, Indonesia Deposit Insurance Corporation (LPS), July 2026</span>
 </button>
-<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-idei.webp?v=3" data-w="634" data-h="450" data-title="National Seminar on Bank Resolution and the LPS Policy Guarantee Program" data-meta="IDEI with LPS, September 2026">
-  <span class="cert-img"><img src="cert-idei.webp?v=3" width="634" height="450" loading="lazy" decoding="async" alt="Certificate: National Seminar on Bank Resolution and the LPS Policy Guarantee Program"></span>
+<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-idei.webp?v=4" data-w="634" data-h="450" data-title="National Seminar on Bank Resolution and the LPS Policy Guarantee Program" data-meta="IDEI with LPS, September 2026">
+  <span class="cert-img"><img src="cert-idei.webp?v=4" width="634" height="450" loading="lazy" decoding="async" alt="Certificate: National Seminar on Bank Resolution and the LPS Policy Guarantee Program"></span>
   <span class="cert-title">National Seminar on Bank Resolution and the LPS Policy Guarantee Program</span>
   <span class="cert-meta">IDEI with LPS, September 2026</span>
 </button>
-<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-eis.webp?v=3" data-w="862" data-h="613" data-title="Economic Insight Series" data-meta="Komunita Regional Surabaya with Bank Indonesia, August 2026">
-  <span class="cert-img"><img src="cert-eis.webp?v=3" width="862" height="613" loading="lazy" decoding="async" alt="Certificate: Economic Insight Series"></span>
+<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-eis.webp?v=4" data-w="862" data-h="613" data-title="Economic Insight Series" data-meta="Komunita Regional Surabaya with Bank Indonesia, August 2026">
+  <span class="cert-img"><img src="cert-eis.webp?v=4" width="862" height="613" loading="lazy" decoding="async" alt="Certificate: Economic Insight Series"></span>
   <span class="cert-title">Economic Insight Series</span>
   <span class="cert-meta">Komunita Regional Surabaya with Bank Indonesia, August 2026</span>
 </button></div>
@@ -302,13 +313,13 @@
     </div>
     <div class="cred" role="tabpanel" id="panel-awards" aria-labelledby="tab-awards" hidden>
       <div class="cert-grid">
-<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-smart.webp?v=3" data-w="634" data-h="450" data-title="Financial Mathematics Tutor, SMART 2026" data-meta="HMP Sains Aktuaria UNESA, April to May 2026">
-  <span class="cert-img"><img src="cert-smart.webp?v=3" width="634" height="450" loading="lazy" decoding="async" alt="Certificate: Financial Mathematics Tutor, SMART 2026"></span>
+<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-smart.webp?v=4" data-w="634" data-h="450" data-title="Financial Mathematics Tutor, SMART 2026" data-meta="HMP Sains Aktuaria UNESA, April to May 2026">
+  <span class="cert-img"><img src="cert-smart.webp?v=4" width="634" height="450" loading="lazy" decoding="async" alt="Certificate: Financial Mathematics Tutor, SMART 2026"></span>
   <span class="cert-title">Financial Mathematics Tutor, SMART 2026</span>
   <span class="cert-meta">HMP Sains Aktuaria UNESA, April to May 2026</span>
 </button>
-<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-digivathon.webp?v=3" data-w="862" data-h="612" data-title="DIGIVATHON 2026" data-meta="Certificate of participation, DIGNITY, Universitas Pendidikan Indonesia, August 2026">
-  <span class="cert-img"><img src="cert-digivathon.webp?v=3" width="862" height="612" loading="lazy" decoding="async" alt="Certificate: DIGIVATHON 2026"></span>
+<button class="cert glass" type="button" data-spring data-reveal data-zoom="cert-digivathon.webp?v=4" data-w="862" data-h="612" data-title="DIGIVATHON 2026" data-meta="Certificate of participation, DIGNITY, Universitas Pendidikan Indonesia, August 2026">
+  <span class="cert-img"><img src="cert-digivathon.webp?v=4" width="862" height="612" loading="lazy" decoding="async" alt="Certificate: DIGIVATHON 2026"></span>
   <span class="cert-title">DIGIVATHON 2026</span>
   <span class="cert-meta">Certificate of participation, DIGNITY, Universitas Pendidikan Indonesia, August 2026</span>
 </button></div>
@@ -363,6 +374,7 @@
 </dialog>
 
 <noscript><style>#loader{display:none}.hero-name{color:#EAF2FF!important}</style></noscript>
-<script type="module" src="app.js?v=3"></script>
+<script type="module" src="app.js?v=4"></script>
+<script nomodule>var l=document.getElementById('loader');if(l)l.parentNode.removeChild(l);document.documentElement.classList.remove('gated');document.documentElement.classList.add('no-webgl');</script>
 </body>
 </html>

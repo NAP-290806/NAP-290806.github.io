@@ -8,6 +8,7 @@ A static, single-page portfolio with a liquid glass 3D scene.
 - GSAP for scroll and spring-style motion
 - Tailwind CSS v4 for styling
 - Fonts: Fraunces and Geist (SIL Open Font License)
+- Intro sound: an original cue synthesized in the browser with the Web Audio API (no audio files, no third-party music)
 
 The files here are the built site, served as they are by GitHub Pages. To change a sentence, edit index.html. The detail panels of the research cards live in the template elements near the middle of that file.
 
