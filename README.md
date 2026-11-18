@@ -12,6 +12,7 @@ A static, single-page portfolio with a liquid glass 3D scene over black batik.
 - Backsound: an original piece for piano and strings (D major, 68 BPM) written for this site and rendered offline (music/backsound.py in the source) with the Versilian Studios Chamber Orchestra 2 Community Edition samples (CC0 1.0); it plays only after "Enter with sound", loops without a seam, and stops when the sound is muted or the tab is hidden
 - Entry screen: a silver frame of leaves, vines and curls built as real 3D geometry (src/frame.js); while the portfolio loads the frame turns and comes closer, and at 100% the camera passes through it
 - Batik: five original motifs generated as SVG by src/batik.mjs (Mega Mendung on the entry screen, Garuda wings and lotus in the hero, then Kawung, Parang and Truntum section by section), over a gringsing ground, lit as a relief in the 3D scene
+- Scroll: the glass blob travels down the page and turns into a 3D object in each section (dice, a histogram, a staircase, a medal, gears, a paper plane), tied to the scroll position
 
 The files here are the built site, served as they are by GitHub Pages. To change a sentence, edit index.html. The detail panels of the research cards live in the template elements near the middle of that file.
 
